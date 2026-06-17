@@ -1,0 +1,166 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary-50: #f0fdf4;
+  --color-primary-900: #14532d;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Beautiful, Neat Layout Margins & Styles for Microsoft Word (.docx) Rendering */
+.scrollable-docx-container {
+  box-sizing: border-box;
+}
+
+/* Base style resets to make rendered DOCX matching elegant academical standards */
+.docx-preview-rendered-html {
+  font-family: "Times New Roman", Times, Georgia, serif !important;
+  color: #1a202c !important;
+  line-height: 1.625 !important;
+  text-align: justify !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Format the main output container */
+.docx-preview-output {
+  width: 100% !important;
+  max-width: 100% !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Override standard sections to look like real tidy paper sheets with margins */
+.docx-preview-rendered-html section.docx {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+  background-color: #ffffff !important;
+  box-shadow: none !important; /* Managed by parent wrappers */
+  padding: 0px !important; /* Use padding from the outer wrapper for maximum elasticity */
+}
+
+/* Clean Margins for Headings */
+.docx-preview-rendered-html h1,
+.docx-preview-rendered-html h2,
+.docx-preview-rendered-html h3,
+.docx-preview-rendered-html h4 {
+  font-family: inherit !important;
+  color: #111827 !important;
+  font-weight: 700 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.3 !important;
+  text-align: left !important;
+}
+
+.docx-preview-rendered-html h1 { font-size: 1.5rem !important; text-align: center !important; text-transform: uppercase !important; }
+.docx-preview-rendered-html h2 { font-size: 1.25rem !important; }
+.docx-preview-rendered-html h3 { font-size: 1.125rem !important; }
+
+/* Elegant Paragraph Spacing and Margins */
+.docx-preview-rendered-html p {
+  margin-top: 0px !important;
+  margin-bottom: 1.125rem !important;
+  text-indent: 1.25cm !important; /* Standard academic paragraph first-line indent */
+  line-height: 1.625 !important;
+  text-align: justify !important;
+}
+
+/* Override indentation reset for center aligned paragraphs (e.g. titles, chapter headers, sub-headers) */
+.docx-preview-rendered-html p[style*="text-align: center"],
+.docx-preview-rendered-html p[style*="text-align:center"],
+.docx-preview-rendered-html p.align-center {
+  text-indent: 0px !important;
+  text-align: center !important;
+}
+
+/* List Clean Lists Styling */
+.docx-preview-rendered-html ul,
+.docx-preview-rendered-html ol {
+  margin-left: 2rem !important;
+  margin-bottom: 1.25rem !important;
+  padding-left: 0.5rem !important;
+  list-style-position: outside !important;
+}
+
+.docx-preview-rendered-html li {
+  margin-bottom: 0.35rem !important;
+  line-height: 1.5 !important;
+  text-indent: 0px !important; /* Do not indent list items */
+  text-align: left !important;
+}
+
+/* Tables Layout & Borders Neatening */
+.docx-preview-rendered-html table {
+  width: 100% !important;
+  max-width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 1.5rem 0 !important;
+  font-size: 0.95em !important;
+  box-sizing: border-box !important;
+  overflow-x: auto !important;
+  display: table !important;
+}
+
+.docx-preview-rendered-html td,
+.docx-preview-rendered-html th {
+  padding: 8px 12px !important;
+  border: 1px solid #94a3b8 !important;
+  line-height: 1.4 !important;
+  word-break: break-word !important;
+  text-indent: 0px !important; /* Reset indentation inside tables */
+}
+
+.docx-preview-rendered-html th {
+  background-color: #f8fafc !important;
+  font-weight: 600 !important;
+}
+
+/* Clean images and media objects */
+.docx-preview-rendered-html img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 1.5rem auto !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+/* Adjust zoomable font sizes inside viewer nicely */
+.docx-preview-rendered-html span {
+  font-family: inherit !important;
+}

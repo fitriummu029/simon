@@ -1,0 +1,8 @@
+{
+  "name": "Remix: SiMon-S",
+  "description": "Sistem Monitoring Progress Skripsi \u0026 Kerja Praktek (SiMon-S) untuk Mahasiswa, Dosen Pembimbing, dan Kaprodi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

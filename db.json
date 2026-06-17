@@ -1,0 +1,209 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "name": "Prof. Dr. Ir. H. Simons, M.T. (Kaprodi)",
+      "email": "admin@simons.ac.id",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "u-dosen1",
+      "name": "Dr. Budi Santoso, M.T.",
+      "email": "budi@simons.ac.id",
+      "password": "dosen",
+      "role": "dosen"
+    },
+    {
+      "id": "u-dosen2",
+      "name": "Siti Rahma, Ph.D.",
+      "email": "siti@simons.ac.id",
+      "password": "dosen",
+      "role": "dosen"
+    },
+    {
+      "id": "u-m1",
+      "name": "Andi Wijaya",
+      "email": "andi@simons.ac.id",
+      "password": "mhs",
+      "role": "mahasiswa"
+    },
+    {
+      "id": "u-m2",
+      "name": "Bintang Cahaya",
+      "email": "bintang@simons.ac.id",
+      "password": "mhs",
+      "role": "mahasiswa"
+    },
+    {
+      "id": "u-m3",
+      "name": "Citra Lestari",
+      "email": "citra@simons.ac.id",
+      "password": "mhs",
+      "role": "mahasiswa"
+    }
+  ],
+  "dosens": [
+    {
+      "id": "d1",
+      "user_id": "u-dosen1",
+      "nidn": "0412038401",
+      "name": "Dr. Budi Santoso, M.T."
+    },
+    {
+      "id": "d2",
+      "user_id": "u-dosen2",
+      "nidn": "0419088602",
+      "name": "Siti Rahma, Ph.D."
+    }
+  ],
+  "mahasiswas": [
+    {
+      "id": "m1",
+      "user_id": "u-m1",
+      "nim": "220101001",
+      "name": "Andi Wijaya",
+      "judul_skripsi": "Sistem Deteksi Hama Padi Berbasis Computer Vision dan IoT",
+      "dosen_id": "d1"
+    },
+    {
+      "id": "m2",
+      "user_id": "u-m2",
+      "nim": "220101002",
+      "name": "Bintang Cahaya",
+      "judul_skripsi": "Analisis Sentimen Kebijakan Publik Menggunakan NLP Berbantuan Transformers",
+      "dosen_id": "d2"
+    },
+    {
+      "id": "m3",
+      "user_id": "u-m3",
+      "nim": "220101003",
+      "name": "Citra Lestari",
+      "judul_skripsi": "Rancang Bangun Sistem Grid Pintar & Smart Watering Menggunakan LoRa",
+      "dosen_id": "d1"
+    }
+  ],
+  "bimbingans": [
+    {
+      "id": "b1",
+      "mahasiswa_id": "m1",
+      "dosen_id": "d1",
+      "bab": 1,
+      "file_name": "Bab_1_Pendahuluan_Andi_v1.pdf",
+      "file_path": "/uploads/m1_bab1_v1.pdf",
+      "catatan_mahasiswa": "Mohon koreksi bimbingan Bab 1 terkait Latar Belakang Masalah pak.",
+      "komentar": "Latar belakang sudah sangat kuat, batasan masalah perjelas lagi.",
+      "status": "disetujui",
+      "version": 1,
+      "created_at": "2026-06-01T09:00:00Z"
+    },
+    {
+      "id": "b2",
+      "mahasiswa_id": "m1",
+      "dosen_id": "d1",
+      "bab": 2,
+      "file_name": "Bab_2_Kajian_Pustaka_Andi_v2.pdf",
+      "file_path": "/uploads/m1_bab2_v2.pdf",
+      "catatan_mahasiswa": "Revisi bab 2 bagian pustaka deep learning.",
+      "komentar": "Sudah baik, teori pustaka sudah sesuai.",
+      "status": "disetujui",
+      "version": 2,
+      "created_at": "2026-06-03T10:30:00Z"
+    },
+    {
+      "id": "b3",
+      "mahasiswa_id": "m1",
+      "dosen_id": "d1",
+      "bab": 3,
+      "file_name": "Bab_3_Metodologi_Andi_v1.pdf",
+      "file_path": "/uploads/m1_bab3_v1.pdf",
+      "catatan_mahasiswa": "Bab 3 pak, diagram alir penelitian sudah dilampirkan.",
+      "komentar": "",
+      "status": "pending",
+      "version": 1,
+      "created_at": "2026-06-10T14:20:00Z"
+    },
+    {
+      "id": "b4",
+      "mahasiswa_id": "m2",
+      "dosen_id": "d2",
+      "bab": 1,
+      "file_name": "Bab_1_Bintang_v1.docx",
+      "file_path": "/uploads/m2_bab1_v1.docx",
+      "catatan_mahasiswa": "Draf awal Bab 1 bu.",
+      "komentar": "Definisikan ulang rumusan masalah dan urgensi penelitian NLP ini.",
+      "status": "perlu_revisi",
+      "version": 1,
+      "created_at": "2026-06-05T08:15:00Z"
+    },
+    {
+      "id": "b5",
+      "mahasiswa_id": "m2",
+      "dosen_id": "d2",
+      "bab": 1,
+      "file_name": "Bab_1_Bintang_v2.docx",
+      "file_path": "/uploads/m2_bab1_v2.docx",
+      "catatan_mahasiswa": "Revisi Bab 1 sesuai instruksi bu.",
+      "komentar": "Bagus, perbaikan sudah sesuai. Silakan lanjut Bab 2.",
+      "status": "disetujui",
+      "version": 2,
+      "created_at": "2026-06-08T11:00:00Z"
+    }
+  ],
+  "logbooks": [
+    {
+      "id": "l1",
+      "bimbingan_id": "b1",
+      "mahasiswa_id": "m1",
+      "bab": 1,
+      "catatan_dosen": "Latar belakang sudah sangat kuat, batasan masalah perjelas lagi.",
+      "status_konfirmasi": "disetujui",
+      "created_at": "2026-06-01T15:00:00Z"
+    },
+    {
+      "id": "l2",
+      "bimbingan_id": "b2",
+      "mahasiswa_id": "m1",
+      "bab": 2,
+      "catatan_dosen": "Sudah baik, teori pustaka sudah sesuai.",
+      "status_konfirmasi": "disetujui",
+      "created_at": "2026-06-04T13:45:00Z"
+    },
+    {
+      "id": "l3",
+      "bimbingan_id": "b4",
+      "mahasiswa_id": "m2",
+      "bab": 1,
+      "catatan_dosen": "Definisikan ulang rumusan masalah dan urgensi penelitian NLP ini.",
+      "status_konfirmasi": "perlu_revisi",
+      "created_at": "2026-06-06T10:00:00Z"
+    },
+    {
+      "id": "l4",
+      "bimbingan_id": "b5",
+      "mahasiswa_id": "m2",
+      "bab": 1,
+      "catatan_dosen": "Bagus, perbaikan sudah sesuai. Silakan lanjut Bab 2.",
+      "status_konfirmasi": "disetujui",
+      "created_at": "2026-06-08T15:30:00Z"
+    }
+  ],
+  "systemLogs": [
+    {
+      "id": "log-1",
+      "timestamp": "2026-06-11T08:00:00Z",
+      "user": "System (Auto)",
+      "action": "Initialize Dashboard",
+      "details": "SiMon-S system initialized successfully."
+    }
+  ],
+  "emails": [
+    {
+      "id": "em-1",
+      "to": "bintang@simons.ac.id",
+      "subject": "[SiMon-S] Persetujuan Bab 1",
+      "body": "Halo Bintang Cahaya, Bab 1 anda telah disetujui oleh Siti Rahma, Ph.D.. Silahkan melanjutkan bimbingan ke bab selanjutnya.",
+      "timestamp": "2026-06-08T11:00:00Z"
+    }
+  ]
+}
